@@ -1,0 +1,105 @@
+# ===========================================
+# Python
+# ===========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.py
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+.venv*
+
+# ===========================================
+# Jupyter Notebook
+# ===========================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ===========================================
+# Data Directory
+# ===========================================
+data/
+
+!data/README.md
+
+# ===========================================
+# IDE and Editor
+# ===========================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ===========================================
+# Operating System
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===========================================
+# Testing
+# ===========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.coveragerc
+.tox/
+.mypy_cache/
+*.manifest
+*.spec
+
+# ===========================================
+# Distribution / Packaging
+# ===========================================
+.pypirc
+.python-version
+
+
+# ===========================================
+# Model Weights (large binary files)
+# ===========================================
+*.pth
+*.pkl
+*.model
+# ===========================================
+# Training Logs
+# ===========================================
+*.log
+logs/
+
+
+# ===========================================
+# Generated Image Outputs
+# ===========================================
+confusion_matrices.png
+training_curves.png
+training_curves_optimized.png
+confusion_matrices_optimized.png

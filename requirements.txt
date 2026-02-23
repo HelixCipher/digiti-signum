@@ -1,0 +1,36 @@
+# Required Python packages for running the notebook
+
+# Core computer vision library with extra modules
+# Note: opencv-contrib-python includes SIFT, SURF, and other patented algorithms
+opencv-contrib-python>=4.8.0
+
+# Numerical computing
+numpy>=1.21.0
+
+# Data visualization
+matplotlib>=3.5.0
+
+# Machine learning utilities (k-NN, confusion matrix, etc.)
+scikit-learn>=1.0.0
+
+# Image processing (skeletonization fallback)
+scikit-image>=0.19.0
+
+# Jupyter environment for running the notebook
+jupyter>=1.0.0
+
+# IPython for interactive display features
+ipython>=8.0.0
+
+# Optional but recommended for better progress bars
+tqdm>=4.60.0
+
+# Optional for enhanced visualization
+seaborn>=0.11.0
+
+# Data manipulation and analysis (for EDA notebook)
+pandas>=1.3.0
+
+# Deep Learning (for CNN and ResNet18 fingerprint classification)
+torch>=2.0.0
+torchvision>=0.15.0
