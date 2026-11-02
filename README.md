@@ -3,7 +3,7 @@
 <img align="left" width="250" height="250" src="project_image.png">
 
 
-An scientific research project demonstrating fingerprint matching and alteration detection using both traditional computer vision and deep learning approaches. This project explores how biometric systems work behind the scenes to match fingerprints and detect alterations.
+A scientific research project demonstrating fingerprint matching and alteration detection using both traditional computer vision and deep learning approaches. This project explores how biometric systems work behind the scenes to match fingerprints and detect alterations.
 
 
 <br><br>
@@ -41,7 +41,7 @@ This project uses the [SOCOFing](https://www.kaggle.com/datasets/ruizgara/socofi
 
 - **Transfer Learning with ResNet18** - Leveraging pre-trained ImageNet features.
 
-- **Multi-class classification** - Detecting 4 alteration types (Real, Central Rotation, Obliteration, Z-cut).
+- **Multi-class classification** - 4 classes: Real, Central Rotation, Obliteration, Z-cut.
 
 
 ---
@@ -84,14 +84,15 @@ This project uses the SOCOFing dataset provided for noncommercial not-for-profit
 
 - **Zcut**: Geometric cuts that remove sections of the print.
 
+---
 
- Key Findings
+## Key Findings
 This project demonstrates the progression from traditional computer vision to deep learning:
-| Approach | Accuracy | Notes |
+| Approach | Result | Notes |
 |----------|----------|-------|
-| Basic SIFT | Wrong match | Produces false positives |
-| SIFT + RANSAC | 35% score | Geometric verification |
-| Minutiae k-NN | 92% | Traditional forensics |
+| Basic SIFT | 11.36% match score (wrong match) | Single-query match score; false positives |
+| SIFT + RANSAC | 35.04% match score | Single-query match score; geometric verification |
+| Minutiae k-NN | 92% | Traditional forensics; 50-sample evaluation |
 | Custom CNN | 97.11% | Deep learning (5-layer), 100 epochs |
 | ResNet18 (5 epochs) | 97.39% | Transfer learning, paper settings |
 | ResNet18 (15 epochs) | 98.40% | Extended training, ~1% improvement |
@@ -106,7 +107,7 @@ This project demonstrates the progression from traditional computer vision to de
 
 2. **Minutiae-based approaches work well** - Traditional forensic methods achieve 92% accuracy using ridge endings and bifurcations.
 
-3. **On this dataset and under the experimental settings used here, deep neural networks (our custom CNN and fine-tuned ResNet18) outperform the specific classical baselines we tested** - Custom CNN achieves 98.11%, while transfer learning with ResNet18 achieves 99.64%.
+3. **On this dataset and under the experimental settings used here, deep neural networks (our custom CNN and fine-tuned ResNet18) outperform the specific classical baselines we tested** - Custom CNN achieves 98.27%, while transfer learning with ResNet18 achieves 99.47%.
 
 4. **Transfer learning is powerful** - Even with domain mismatch (ImageNet → fingerprints), fine-tuned ResNet18 outperforms custom CNNs.
 
@@ -116,9 +117,9 @@ This project demonstrates the progression from traditional computer vision to de
 
 ---
 
- ## Requirements
+## Requirements
 
- For Notebook 2 (Traditional CV)
+For Notebook 2 (Traditional CV)
  ```
 pip install opencv-contrib-python numpy matplotlib scikit-learn scikit-image tqdm
 ```
